@@ -19,10 +19,7 @@ STATIC_URL = '/Projects/static/'
 
 SITE_ROOT = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 
-STATICFILES_DIRS = (
-  os.path.join( os.path.join(SITE_ROOT, 'Projects'), 'static'),
-  '/Projects/static/',
-)
+STATICFILES_DIRS = [os.path.join( os.path.join(BASE_DIR, 'Projects/static'))]
 
 
 # Quick-start development settings - unsuitable for production
